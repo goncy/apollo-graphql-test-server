@@ -16,6 +16,10 @@ type Query {
   channels: [Channel],
   creator: Creator
 }
+
+type Mutation {
+  addChannel(name: String!): Channel
+}
 `
 
 // Makes the Querys executable and apply resolvers to them
